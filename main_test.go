@@ -36,6 +36,12 @@ func Test_convertArshinToM(t *testing.T) {
 			want:    0,
 			wantErr: true,
 		},
+		{
+			name:    "-2 аршин нельзя конвертировать",
+			args:    args{n: -2},
+			want:    0,
+			wantErr: true,
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
