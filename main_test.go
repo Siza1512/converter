@@ -16,6 +16,11 @@ func Test_convertArshinToM(t *testing.T) {
 			args: args{n: 1},
 			want: 0.71,
 		},
+		{
+			name: "2 аршина равно 1.42 метра",
+			args: args{n: 1},
+			want: 1.42,
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
