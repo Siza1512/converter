@@ -53,8 +53,8 @@ func Test_convertArshinToM(t *testing.T) {
 				t.Errorf("convertArshinToM() error = %v, wantErr %v", err, tt.wantErr)
 				return
 			}
-			if tt.wantErr == true && err != negativeNumberNotSupport {
-				t.Errorf("convertArshinToM() err = %v, want err %v", err, negativeNumberNotSupport)
+			if tt.wantErr == true && err != converters.NegativeNumberNotSupport {
+				t.Errorf("convertArshinToM() err = %v, want err %v", err, converters.NegativeNumberNotSupport)
 				return
 			}
 			if got != tt.want {
