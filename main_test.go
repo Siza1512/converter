@@ -12,6 +12,11 @@ func Test_convertArshinToM(t *testing.T) {
 		want float64
 	}{
 		{
+			name: "0 аршин равен 0 метрам",
+			args: args{n: 0},
+			want: 0,
+		},
+		{
 			name: "1 аршин равен 0.71 метрам",
 			args: args{n: 1},
 			want: 0.71,
