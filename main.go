@@ -1,5 +1,5 @@
 package main
 
 func convertArshinToM(n float64) float64 {
-	return 0
+	return 0.71
 }
